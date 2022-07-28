@@ -13,7 +13,7 @@ export default function NavBar() {
 //Funcion que sirve para mandar el texto del input a la api y que la api lo devuelva invertido
   const handleSubmit = (e) => {
    e.preventDefault()
-   dispatch(palindrome(text))
+   dispatch(palindrome(text.toLowerCase()))
    e.target.reset();
   }
 

@@ -15,14 +15,15 @@ export default function NavBar() {
    e.preventDefault()
    dispatch(palindrome(text.toLowerCase()))
    e.target.reset();
+   
   }
 
   return (
-    <nav class="navbar " style={{backgroundColor:'#e63946'}}>
-  <div class="container-fluid ">
-    <form class="d-flex  w-50 p-2 mx-auto" role="search" onSubmit={handleSubmit}>
-    <input class="form-control me-2" type="search" placeholder="Insert text" aria-label="Search" onChange={handleChange}/>
-      <button class="btn" style={{backgroundColor:'#3f37c9' , color:'#4895ef', marginLeft:'10px', width:'100px'}} type="submit">Send</button>
+    <nav className="navbar " style={{backgroundColor:'#e63946'}}>
+  <div className="container-fluid ">
+    <form className="d-flex  w-50 p-2 mx-auto" role="search" onSubmit={handleSubmit}>
+    <input className="form-control me-2" type="search" placeholder="Insert text" aria-label="Search" onChange={handleChange}/>
+      <button className="btn" style={{backgroundColor:'#3f37c9' , color:'#4895ef', marginLeft:'10px', width:'100px'}} type="submit">Send</button>
     </form>
   </div>
 </nav>
